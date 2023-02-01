@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A088D28-0765-4B49-86C5-88D43A8091BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KursovayaBSBD</RootNamespace>
+    <AssemblyName>KursovayaBSBD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAuth.Designer.cs">
+      <DependentUpon>FormAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPeople.Designer.cs">
+      <DependentUpon>FormPeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrava.Designer.cs">
+      <DependentUpon>FormPrava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPravaSotr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPravaSotr.Designer.cs">
+      <DependentUpon>FormPravaSotr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSotr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSotr.Designer.cs">
+      <DependentUpon>FormSotr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSotrudnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSotrudnik.Designer.cs">
+      <DependentUpon>FormSotrudnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZayav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZayav.Designer.cs">
+      <DependentUpon>FormZayav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZayavSotr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZayavSotr.Designer.cs">
+      <DependentUpon>FormZayavSotr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PravaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PravaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAuth.resx">
+      <DependentUpon>FormAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPeople.resx">
+      <DependentUpon>FormPeople.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrava.resx">
+      <DependentUpon>FormPrava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPravaSotr.resx">
+      <DependentUpon>FormPravaSotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSotr.resx">
+      <DependentUpon>FormSotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSotrudnik.resx">
+      <DependentUpon>FormSotrudnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZayav.resx">
+      <DependentUpon>FormZayav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZayavSotr.resx">
+      <DependentUpon>FormZayavSotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="PravaDataSet.xsc">
+      <DependentUpon>PravaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PravaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PravaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PravaDataSet.xss">
+      <DependentUpon>PravaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
